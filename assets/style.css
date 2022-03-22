@@ -1,0 +1,47 @@
+body {
+    background-color: #8282e0;
+}
+
+.javascript-header, p {
+    color: white;
+    padding: 5%;
+}
+
+.instructions {
+    margin: auto;
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.start {
+   padding: 20px;
+}
+
+#questions {
+    color: white;
+}
+
+.question {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#selection {
+    margin: 5%;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+
+}
+
+span, a {
+    font-family: monospace, monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
