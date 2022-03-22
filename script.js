@@ -90,10 +90,11 @@ const questions = [
         ]
     },
 ]
-const start = document.getElementById('start');
-start.addEventListener('click', countdown);
+// const start = document.getElementById('start');
+// start.addEventListener('click', countdown);
 
 function countdown() {
+    document.getElementById("start").addEventListener("click", countdown);
     var timeleft = 10;
     var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
@@ -104,7 +105,7 @@ function countdown() {
         }
         timeleft -= 1;
     }, 1000);
-    console.log(countdown)
+
 }
 
 
