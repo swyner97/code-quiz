@@ -10,16 +10,14 @@ startBtn.addEventListener('click', function () {
     let instructions = document.querySelector('#instructions');
     instructions.innerHTML = "";
 
-    // let timer = document.querySelector('.timer');
     let countdownEl = document.querySelector('#countdown');
-    // timer.innerHTML = "<h3>Time left: </h3>";
     countdownEl.innerHTML = `${timeLeft}`;
 
     var timeLeft = 10;
     var downloadTimer = setInterval(function () {
         if  (timeLeft <= 0) {
             clearInterval(downloadTimer);
-            document.getElementById("countdown").innerHTML = "Finished";
+            document.getElementById("countdown").innerHTML = "GAME OVER";
         } else {
             document.getElementById("countdown").innerHTML = timeLeft + " seconds remaining";
         }
